@@ -483,7 +483,7 @@ Contributions welcome! Whether it's:
 
 ---
 
-You can read more about the design journey in this blog post https://3adly.blogspot.com/2025/12/my-esp8266-blog-experiment-in.html
+You can read more about the design journey in this blog post https://3adly.blogspot.com/2025/12/my-esp8266-blog-server-inside-mushroom-house.html
 
 ---
 
