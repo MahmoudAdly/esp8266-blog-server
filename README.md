@@ -449,7 +449,6 @@ Free heap: 45328 bytes
 ## 📈 Future Enhancements
 
 Potential modules to add:
-- `mqtt.h` - MQTT support for IoT integration
 - `api.h` - REST API endpoints
 - `cache.h` - Response caching for better performance
 - `analytics.h` - Simple analytics dashboard
@@ -482,13 +481,7 @@ Contributions welcome! Whether it's:
 - Performance optimizations
 - Feature requests
 
-## Credits
-
-**Hardware:** ESP8266 microcontroller ecosystem  
-**Inspiration:** Early web servers and minimalist computing  
-**Philosophy:** Less is more - constraints breed creativity
-
 ---
 
 **Built with ❤️ for the maker community**  
-*A $4 chip, 80KB of RAM, and unlimited possibilities*
+*A €10 chip, 80KB of RAM, and unlimited possibilities*
