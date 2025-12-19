@@ -483,5 +483,9 @@ Contributions welcome! Whether it's:
 
 ---
 
+You can read more about the design journey in this blog post https://3adly.blogspot.com/2025/12/my-esp8266-blog-experiment-in.html
+
+---
+
 **Built with ❤️ for the maker community**  
 *A €10 chip, 80KB of RAM, and unlimited possibilities*
