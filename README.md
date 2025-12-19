@@ -357,7 +357,7 @@ Use these placeholders in your templates:
 ### Performance
 - Posts are streamed from SD card (no RAM loading)
 - Use fast SD cards (Class 10 recommended)
-- Limit concurrent connections (3-5 users max)
+- Handles ~10 concurrent users maximum (becomes unstable beyond that)
 - Enable lazy loading for images (built-in)
 
 ### Security
