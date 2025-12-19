@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My ESP8266-powered blog">
+  <title>{{TITLE}}</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/static/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="/">
+      <img src="/static/logo.png" alt="Blog Logo" class="logo">
+    </a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/archive">Archive</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Latest Posts</h1>
+    {{POSTS}}
+    {{PAGINATION}}
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My ESP8266 Blog</p>
+  </footer>
+</body>
+</html>

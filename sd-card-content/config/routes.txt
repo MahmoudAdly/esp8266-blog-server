@@ -1,0 +1,5 @@
+# Blog Posts - Renamed for SD card compatibility
+# Format: /url-path|short-filename.md|Full Title
+
+/about|about.md|Über diesen Blog
+/posts/sample-post|sample-post.md|Sample Post title for the listing

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      margin: -20px -20px 20px;
+      border-radius: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .nav {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .nav a, .btn {
+      background: #0066cc;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+    }
+    .nav a:hover, .btn:hover {
+      background: #0052a3;
+    }
+    .section {
+      margin: 30px 0;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 4px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .info {
+      background: #e7f3ff;
+      padding: 15px;
+      border-left: 4px solid #0066cc;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📁 Admin Panel</h1>
+  </div>
+  <div class="container">
+    <div class="nav">
+      <a href="/admin/files?dir=/posts">📄 Posts</a>
+      <a href="/admin/files?dir=/config">⚙️ Config</a>
+      <a href="/admin/files?dir=/static">🎨 Static Files</a>
+      <a href="/admin/files?dir=/templates">📋 Templates</a>
+      <a href="/admin/logs">📊 Access Logs</a>
+      <a href="/">🏠 Back to Blog</a>
+    </div>
+    
+    <div class="section">
+      <h2>Quick Actions</h2>
+      <form method="POST" action="/admin/reload" style="display:inline">
+        <button type="submit" class="btn">🔄 Reload Configuration</button>
+      </form>
+      <p style="margin-top:15px;color:#666">Reloads routes.txt and redirects.txt from SD card</p>
+    </div>
+    
+    <div class="section">
+      <h2>Upload New File</h2>
+      <form method="POST" action="/admin/upload" enctype="multipart/form-data">
+        <p><input type="text" name="path" placeholder="Path (e.g., /posts/new-post.md)" required style="width:100%;padding:10px;margin:10px 0;border:1px solid #ddd;border-radius:4px"></p>
+        <p><input type="file" name="file" required style="padding:10px"></p>
+        <button type="submit" class="btn">⬆️ Upload File</button>
+      </form>
+    </div>
+    
+    <div class="info">
+      <strong>💡 Tips:</strong><br>
+      • Click folder names above to browse files<br>
+      • Edit markdown and config files directly in browser<br>
+      • Upload images to /static/img/<br>
+      • Don't forget to reload config after editing routes.txt or redirects.txt
+    </div>
+  </div>
+</body>
+</html>

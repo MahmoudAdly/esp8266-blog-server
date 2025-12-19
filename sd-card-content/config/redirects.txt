@@ -1,0 +1,9 @@
+# URL Redirections
+# Format: /from/path|/to/path
+# Remove timestamp-based URLs from old blog
+
+/2023/11/old-post.html|/posts/sample-post
+
+# Common alternate URLs
+/blog|/
+/home|/

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <a href="/">
+      <img src="/static/logo.png" alt="Blog Logo" class="logo">
+    </a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/archive">Archive</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Archive - All Posts</h1>
+    <p>Complete list of all {{POST_COUNT}} posts:</p>
+    <ul class="archive-list">
+      {{POST_LIST}}
+    </ul>
+    <p style="margin-top:30px"><a href="/">← Back to Home</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My ESP8266 Blog</p>
+  </footer>
+</body>
+</html>
